@@ -108,8 +108,8 @@ export const SelectLang: React.FC<SelectLangProps> = ({ onSelectLang }) => {
       value={lang}
       onChange={handleLangChange}
     >
-      <option value={SpeakLang.zh}>Chinese</option>
       <option value={SpeakLang.en}>English</option>
+      <option value={SpeakLang.zh}>Chinese</option>
     </select>
   );
 };
