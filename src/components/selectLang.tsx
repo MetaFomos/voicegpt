@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 
 export enum SpeakLang {
   zh = 'zh',
@@ -89,11 +89,6 @@ export const getSpeechLang = (lang: SpeakLang): string => {
 
 export const SelectLang: React.FC<SelectLangProps> = ({ onSelectLang }) => {
   const [lang, setLang] = useState<SpeakLang>(SpeakLang.en);
-
-  useEffect(() => {
-    const storedLang = localStorage.getItem(StoredKeySelectedLang);
-    setLang(storedLang as SpeakLang);
-  }, []);
 
   const handleLangChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
     const selectedLang = event.target.value as SpeakLang;
