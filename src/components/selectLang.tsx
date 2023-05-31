@@ -108,7 +108,16 @@ export const SelectLang: React.FC<SelectLangProps> = ({ onSelectLang }) => {
       value={lang}
       onChange={handleLangChange}
     >
+      <option value={SpeakLang.zh}>Chinese</option>
       <option value={SpeakLang.en}>English</option>
+      <option value={SpeakLang.es}>Español</option>
+      <option value={SpeakLang.fr}>Français</option>
+      <option value={SpeakLang.de}>Deutsch</option>
+      <option value={SpeakLang.it}>Italiano</option>
+      <option value={SpeakLang.ja}>日本語</option>
+      <option value={SpeakLang.ko}>한국어</option>
+      <option value={SpeakLang.pt}>Português</option>
+      <option value={SpeakLang.ru}>Русский</option>
     </select>
   );
 };
