@@ -1,5 +1,5 @@
 {
-  "name": "next-js-boilerplate",
+  "name": "voicegpt-dragonai",
   "version": "3.8.1",
   "scripts": {
     "dev": "next dev",
