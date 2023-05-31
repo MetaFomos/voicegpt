@@ -1,5 +1,3 @@
-import { faKey } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import type { ReactNode } from 'react';
 import { useState } from 'react';
 
@@ -28,7 +26,7 @@ const Main = (props: IMainProps) => {
               </p>
             </div>
             <div className="flex items-center space-x-4">
-              <button
+              {/* <button
                 onClick={() => setShowApiKeyManager((prev) => !prev)}
                 className="ml-4 w-full rounded-md bg-gray-200 py-2 px-3 text-sm font-medium text-black hover:bg-gray-300"
               >
@@ -36,7 +34,7 @@ const Main = (props: IMainProps) => {
                   <FontAwesomeIcon icon={faKey} className="mr-2 w-4" />
                   Api Key
                 </span>
-              </button>
+              </button> */}
               <SelectLang />
             </div>
             {showApiKeyManager && (
@@ -53,11 +51,11 @@ const Main = (props: IMainProps) => {
         <main className="content py-5 text-xl">{props.children}</main>
 
         <footer className="border-t border-gray-300 py-8 text-center text-sm">
-          © Copyright {new Date().getFullYear()} {AppConfig.title}. Made by{' '}
-          <a href="https://github.com/RetricSu/VoiceGPT">
-            A Real Monkey not AI
-          </a>
-          .
+          VoiceGPT powered by{' '}
+          <a href="https://t.me/skyearth008" target="_blank">
+            Zheng
+          </a>{' '}
+          for dragonAI
         </footer>
       </div>
     </div>

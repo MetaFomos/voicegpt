@@ -119,7 +119,7 @@ const Chatbot: React.FC = () => {
   };
 
   const thinking = async () => {
-    const key = localStorage.getItem('apiKey');
+    const key = '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';
     if (key == null) return alert('you need to set api key first!');
 
     const question: MessageHistory = {
