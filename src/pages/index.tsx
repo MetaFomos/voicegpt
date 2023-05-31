@@ -119,9 +119,7 @@ const Chatbot: React.FC = () => {
   };
 
   const thinking = async () => {
-    const key1 = 'sk-8DSChEVpYakSA8TqEW3QT3BlbkFJjhOzDKXxEAL5l9p';
-    const key2 = 'LiKTJ';
-    const key = key1 + key2;
+    const key = process.env.apikey;
     if (key == null) return alert('you need to set api key first!');
     console.log(key);
 
