@@ -88,7 +88,7 @@ export const getSpeechLang = (lang: SpeakLang): string => {
 };
 
 export const SelectLang: React.FC<SelectLangProps> = ({ onSelectLang }) => {
-  const [lang, setLang] = useState<SpeakLang>(SpeakLang.zh);
+  const [lang, setLang] = useState<SpeakLang>(SpeakLang.en);
 
   useEffect(() => {
     const storedLang = localStorage.getItem(StoredKeySelectedLang);
